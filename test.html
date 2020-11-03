@@ -1,35 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-html, body {
-    height:100%;
-margin:0;
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
 }
 
-.h_iframe {
-    position:relative;
-}
-.h_iframe .ratio {
-    display:block;
-    width:100%;
-    height:auto;
-}
-.h_iframe iframe {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 </style>
+</head>
 <body>
-
-<div class="video-container">
-    <div class="h_iframe">
-        <!-- a transparent image is preferable -->
-        <img class="ratio" src="http://placehold.it/16x9" />
-        <iframe src="https://christmast-galore-responsive.vercel.app/" frameborder="0" allowfullscreen></iframe>
-    </div>
+<div class="container"> 
+  <iframe class="responsive-iframe" src="https://christmast-galore-responsive.vercel.app/ "></iframe>
 </div>
 
 </body>
