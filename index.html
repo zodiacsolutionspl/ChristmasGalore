@@ -10,9 +10,9 @@
 		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Responsive.json");
 		var scaleToFit;
 		try {
-			scaleToFit = !!JSON.parse("false");
+			scaleToFit = !!JSON.parse("true");
 		} catch (e) {
-			scaleToFit = false;
+			scaleToFit = true;
 		}
 
 		function onResize() {
