@@ -10,7 +10,7 @@
 		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/new.json");
 		var scaleToFit;
 		try {
-			scaleToFit = !!JSON.parse("1");
+			scaleToFit = !!JSON.parse("true");
 		} catch (e) {
 			scaleToFit = true;
 		}
@@ -79,7 +79,7 @@
 </head>
 
 <body onload="onResize();">
-	<div id="gameContainer" data-pixelated=""></div>
+	<div id="gameContainer" data-pixelated="true"></div>
 </body>
 
 </html>
