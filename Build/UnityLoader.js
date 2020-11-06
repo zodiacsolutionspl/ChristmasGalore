@@ -2053,7 +2053,7 @@ var UnityLoader = UnityLoader || {
     }(),
 	compatibilityCheck: function(e, t, r) {
          t();
-     },
+    },
     buildCompatibilityCheck: function(e, t, r) {
         function n() {
             if ("undefined" == typeof e.graphicsAPI) return !0;
